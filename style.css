@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    src: local(''),
+        url('assets/fonts/lato-v23-latin-300.woff2') format('woff2'),
+        url('assets/fonts/lato-v23-latin-300.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+        url('assets/fonts/lato-v23-latin-regular.woff2') format('woff2'),
+        url('assets/fonts/lato-v23-latin-regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    src: local(''),
+        url('assets/fonts/lato-v23-latin-900.woff2') format('woff2'),
+        url('assets/fonts/lato-v23-latin-900.woff') format('woff');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 20px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1.4rem;
+    color: #242424;
+}
+
+/***FONTS***/
+h1 {
+    margin: 0;
+    font-weight: 900;
+    font-size: 3rem;
+    line-height: 4.6rem;
+}
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: #EDEDED;
+}
+
+.screen.up {
+    margin-top: -100vh;
+}
+
+/***MAIN SCREEN***/
+.main__title,
+.main__start {
+    color: #2D3E5B;
+}
+
+.main__start {
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.main__image {
+    width: 350px;
+    height: 350px;
+    padding: 20px;
+    position: relative;
+}
+
+.main__image-round {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 60% 60%;
+}
+
+.main__image-round:nth-child(1) {
+    background-color: #F9D066;
+    background-image: url(assets/icons/rock-white.svg);
+}
+
+.main__image-round:nth-child(2) {
+    top: 50px;
+    left: 175px;
+    background-color: #AACC88;
+    background-image: url(assets/icons/paper-white.svg);
+}
+
+.main__image-round:nth-child(3) {
+    top: 175px;
+    left: 75px;
+    background-color: #DB9291;
+    background-image: url(assets/icons/scissors-white.svg);
+}

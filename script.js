@@ -51,4 +51,4 @@ function game() {
     return getWinner(computerScore, playerScore);
 }
 
-console.log(game());
+//console.log(game());
