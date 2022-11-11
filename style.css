@@ -41,7 +41,11 @@ body {
     font-weight: 400;
     font-size: 2rem;
     line-height: 1.4rem;
-    color: #242424;
+    color: #2D3E5B;
+}
+
+button {
+    border: none;
 }
 
 /***FONTS***/
@@ -67,8 +71,8 @@ h1 {
 }
 
 /***MAIN SCREEN***/
-.main__title,
-.main__start {
+.main__start,
+.result__start {
     color: #2D3E5B;
 }
 
@@ -111,4 +115,59 @@ h1 {
     left: 75px;
     background-color: #DB9291;
     background-image: url(assets/icons/scissors-white.svg);
+}
+
+/***GAME SCREEN***/
+.game__board {
+    display: flex;
+    justify-content: space-between;
+}
+
+.game__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.game__title {
+    margin-bottom: 30px;
+}
+
+.game__player {
+    margin-right: 100px;
+}
+
+.game__options {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.game__option {
+    width: 100px;
+    height: 100px;
+    background: #EDEDED;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60% 60%;
+    cursor: pointer;
+}
+
+.game__option.rock {
+    background-image: url(assets/icons/rock.svg);
+}
+
+.game__option.paper {
+    background-image: url(assets/icons/paper.svg);
+}
+
+.game__option.scissors {
+    background-image: url(assets/icons/scissors.svg);
+}
+
+.game__computer {
+    align-self: center;
 }

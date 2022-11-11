@@ -22,6 +22,34 @@
             <a class="main__start" href="#" id="start">Start</a>
         </div>
 
+        <div class="screen game">
+            <div class="game__board">
+                <div class="game__info">
+                    <div class="game__title">Player</div>
+                    <div class="game__score player-score">0</div>
+                </div>
+                <div class="game__player">
+                    <div class="game__options">
+                        <button class="game__option rock" data-value="rock"></button>
+                        <button class="game__option paper" data-value="paper"></button>
+                        <button class="game__option scissors" data-value="scissors"></button>
+                    </div>
+                </div>
+                <div class="game__computer">
+                    <div class="game__option"></div>
+                </div>
+                <div class="game__info">
+                    <div class="game__title">Computer</div>
+                    <div class="game__score computer-score">0</div>
+                </div>
+            </div>
+            <p class="game__status">Pick an option</p>
+        </div>
+
+        <div class="screen result">
+            <p class="result__winner">You win!</p>
+            <a class="result__start" href="#" id="start-again">Start again</a>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
