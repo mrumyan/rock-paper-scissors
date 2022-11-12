@@ -71,12 +71,12 @@ h1 {
 }
 
 /***MAIN SCREEN***/
-.main__start,
-.result__start {
+.main__start-btn,
+.result__restart-btn {
     color: #2D3E5B;
 }
 
-.main__start {
+.main__start-btn {
     margin-top: 20px;
     text-decoration: none;
 }
@@ -153,18 +153,20 @@ h1 {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 60% 60%;
-    cursor: pointer;
 }
 
 .game__option.rock {
+    cursor: pointer;
     background-image: url(assets/icons/rock.svg);
 }
 
 .game__option.paper {
+    cursor: pointer;
     background-image: url(assets/icons/paper.svg);
 }
 
 .game__option.scissors {
+    cursor: pointer;
     background-image: url(assets/icons/scissors.svg);
 }
 
